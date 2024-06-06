@@ -41,9 +41,9 @@ function AnimeCard({ anime, index }: Prop) {
           duration: 0.5,
         }}
         viewport={{ amount: 0 }}
-        className='max-w-sm rounded relative w-full'
+        className='max-w-sm rounded relative w-full mx-auto'
       >
-        <div className='relative w-full h-[37vh]'>
+        <div className='relative w-full h-[50vh] md:h-[37vh]'>
           <Image
             src={`https://shikimori.one${anime.image.original}`}
             alt={anime.name}

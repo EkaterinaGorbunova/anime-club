@@ -12,7 +12,7 @@ const AnimeDetails = async ({ params: { id } }: Props) => {
   if (!data) redirect('/');
   return (
     <section className='flex flex-col lg:flex-row items-center lg:items-start lg:justify-center p-4 lg:p-8 bg-gray-900 '>
-      <div className='lg:flex-1 relative w-full h-[50vh] md:h-[60vh] flex justify-center items-center mb-4 lg:mb-0 lg:mr-4'>
+      <div className='lg:flex-1 relative w-full h-[40vh] md:h-[60vh] flex justify-center items-center mb-4 lg:mb-0 lg:mr-4'>
         <Image
           src={`https://shikimori.one${data.image.original}`}
           alt={data.name}
