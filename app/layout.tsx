@@ -1,16 +1,25 @@
-import type { Metadata } from "next";
-import { DM_Sans } from "next/font/google";
+import type { Metadata } from 'next';
+import { DM_Sans } from 'next/font/google';
 
-import Hero from "@/components/Hero";
-import Footer from "@/components/Footer";
+import Hero from '@/components/Hero';
+import Footer from '@/components/Footer';
 
-import "./globals.css";
+import './globals.css';
 
-const dmSans = DM_Sans({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "Anime Club",
-  description: "Your favorite anime, all in one place. Your friendly online community for all things anime.",
+  title: 'Anime Club',
+  description:
+    'Your favorite anime, all in one place. Explore a comprehensive list of anime! Find classic and new releases and discover your next anime obsession',
+  other: {
+    'theme-color': '#222222',
+    'og:type': 'website',
+    'og:title': 'Your Ultimate Anime Exploration Guide',
+    'og:image': '/anime.webp',
+    'og:url': 'https://animes-club.vercel.app',
+    'og:site_name': 'Anime Club',
+  },
 };
 
 export default function RootLayout({
@@ -19,9 +28,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body className={dmSans.className}>
-        <main className="max-w-7xl mx-auto bg-[#0F1117]">
+        <main className='max-w-7xl mx-auto bg-[#0F1117]'>
           <Hero />
           {children}
           <Footer />
