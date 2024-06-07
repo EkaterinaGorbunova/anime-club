@@ -3,7 +3,9 @@ import Image from 'next/image';
 function Footer() {
   return (
     <footer className='sm:px-16 py-4 px-8 flex justify-between items-center gap-2 flex-wrap bg-[#161921]'>
-      <p className='text-base font-bold text-white'>2024 AnimeClub</p>
+      <p className='text-base font-bold text-white'>
+        &copy; {new Date().getFullYear()} AnimeClub
+      </p>
       <Image
         src='/logo.svg'
         alt='logo'
@@ -15,8 +17,8 @@ function Footer() {
         <Image
           src='/tiktok.svg'
           alt='logo'
-          width={19}
-          height={19}
+          width={16}
+          height={18}
           className='object-contain'
         />
         <Image
@@ -29,7 +31,7 @@ function Footer() {
         <Image
           src='/twitter.svg'
           alt='logo'
-          width={19}
+          width={18}
           height={19}
           className='object-contain'
         />

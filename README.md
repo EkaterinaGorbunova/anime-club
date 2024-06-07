@@ -10,7 +10,10 @@
 4. [Anime API](https://shikimori.one/api/doc/1.0/animes/index)
 
 ### Expanded features
-Implemented dynamic page routing
+
+1. Implemented dynamic page routing
+2. Optimized images
 
 ### Resources
+
 [JS Mastery](https://www.youtube.com/watch?v=FKZAXFjxlJI)

@@ -7,8 +7,13 @@ function Hero() {
         <Image
           src='/logo.svg'
           alt='logo'
-          width={101}
-          height={96}
+          width={47}
+          height={44}
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
+          style={{
+            width: '101px',
+            height: '96px',
+          }}
           className='object-contain'
         />
         <h1 className='sm:text-6xl text-5xl text-white lg:max-w-lg font-bold leading-[120%]'>
@@ -17,7 +22,7 @@ function Hero() {
         </h1>
       </div>
       <div className='lg:flex-1 relative w-full h-[50vh] justify-center'>
-        <Image src='/anime.png' alt='anime' fill className='object-contain' />
+        <Image src='/anime.png' alt='anime' fill sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw' className='object-contain' />
       </div>
     </header>
   );

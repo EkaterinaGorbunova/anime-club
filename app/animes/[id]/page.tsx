@@ -17,6 +17,7 @@ const AnimeDetails = async ({ params: { id } }: Props) => {
           src={`https://shikimori.one${data.image.original}`}
           alt={data.name}
           fill
+          sizes='(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw'
           className='object-contain rounded-lg shadow-lg'
         />
       </div>
