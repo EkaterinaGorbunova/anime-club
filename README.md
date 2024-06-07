@@ -13,6 +13,7 @@
 
 1. Implemented dynamic page routing
 2. Optimized images
+3. Improved SEO
 
 ### Resources
 

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     'theme-color': '#222222',
     'og:type': 'website',
     'og:title': 'Your Ultimate Anime Exploration Guide',
-    'og:image': '/anime.webp',
+    'og:image': '/anime.png',
     'og:url': 'https://animes-club.vercel.app',
     'og:site_name': 'Anime Club',
   },
